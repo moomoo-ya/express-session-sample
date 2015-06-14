@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Login
+  p.caution= error
+  form(method='POST',action='/login')
+    input(type='text',name='userName',placeholder='username')
+    //パスワード認証する場合は適宜入力欄を追加
+    //input(type='password',name='password',placeholder='password')
+    input(type='submit',value='Login')
+    
